@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshvardhan Kamble - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><!-- =============== CSS SECTION =============== -->
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body class="h-full">
+  <div class="app-wrapper overflow-auto"><!-- Navigation -->
+   <nav class="fixed top-0 left-0 right-0 z-50 bg-opacity-90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+     <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-lg neon-border flex items-center justify-center neon-text font-bold text-lg">
+       HK
+      </div>
+     </div>
+     <div class="hidden md:flex items-center gap-8"><a href="#about" class="nav-link text-sm font-medium">About</a> <a href="#skills" class="nav-link text-sm font-medium">Skills</a> <a href="#projects" class="nav-link text-sm font-medium">Projects</a> <a href="#education" class="nav-link text-sm font-medium">Education</a> <a href="#contact" class="nav-link text-sm font-medium">Contact</a>
+     </div><button class="btn-primary text-sm hidden md:block">Download CV</button> <button class="md:hidden neon-text" id="mobile-menu-btn">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18" />
+      </svg></button>
+    </div><!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+     <div class="flex flex-col gap-4"><a href="#about" class="nav-link text-sm font-medium">About</a> <a href="#skills" class="nav-link text-sm font-medium">Skills</a> <a href="#projects" class="nav-link text-sm font-medium">Projects</a> <a href="#education" class="nav-link text-sm font-medium">Education</a> <a href="#contact" class="nav-link text-sm font-medium">Contact</a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section class="min-h-screen hero-grid flex items-center justify-center relative overflow-hidden pt-20"><!-- Background Elements -->
+    <div class="absolute top-20 left-10 w-72 h-72 rounded-full hero-bg-blur-1"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full hero-bg-blur-2"></div>
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+     <div class="text-center md:text-left">
+      <div class="fade-in opacity-0">
+       <p class="code-font text-sm mb-4 text-neon"></p>
+      </div>
+      <h1 id="hero-name" class="fade-in opacity-0 stagger-1 text-4xl md:text-6xl font-bold mb-4 text-primary-color">Harshvardhan<br><span class="neon-text">Kamble</span></h1>
+      <p id="hero-title" class="fade-in opacity-0 stagger-2 text-xl md:text-2xl font-light mb-6 text-secondary-color">Aspiring Front-End Developer</p><!-- Skill Badges -->
+      <div class="fade-in opacity-0 stagger-2 flex flex-wrap gap-2 mb-6 justify-center md:justify-start"><span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold badge-html">
+        <svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+        </svg> HTML5 </span> <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold badge-css">
+        <svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm4.13 4.84l-.232 2.718 10.059.003.23-2.622-10.057-.099zM6.248 10.854l.33 4.171L12 16.466l5.379-1.443.744-8.157H8.531l-.326 3.426-2.91.804z" />
+        </svg> CSS3 </span> <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold badge-js">
+        <svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+        </svg> JavaScript </span>
+      </div>
+      <p id="hero-summary" class="fade-in opacity-0 stagger-3 text-base mb-8 max-w-lg text-secondary-color">B.Tech Computer Science student specializing in React.js. Passionate about bridging the gap between creative design and functional code.</p>
+      <div class="fade-in opacity-0 stagger-4 flex flex-wrap gap-4 justify-center md:justify-start"><a href="#projects" class="btn-primary">View Projects</a> <a href="#contact" class="btn-primary btn-transparent">Contact Me</a>
+      </div><!-- Social Links -->
+      <div class="fade-in opacity-0 stagger-5 flex gap-4 mt-8 justify-center md:justify-start"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-circle hover:neon-glow transition-all">
+        <svg width="20" height="20" fill="currentColor" class="neon-text" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg></a> <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-circle hover:neon-glow transition-all">
+        <svg width="20" height="20" fill="currentColor" class="neon-text" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg></a>
+      </div>
+     </div><!-- Avatar/Graphic with Photo Upload -->
+     <div class="flex justify-center">
+      <div class="relative floating">
+       <div class="absolute inset-0 rounded-full pulse-ring pulse-ring-border"></div><!-- 
+              TO ADD YOUR PHOTO: 
+              1. Find the line below with id="profile-image"
+              2. Replace src="" with src="https://your-image-url.com/photo.jpg"
+              3. Remove the "hidden" class to show your photo
+              
+              Example: <img id="profile-image" class="w-full h-full object-cover" src="https://example.com/your-photo.jpg" alt="Profile Photo" loading="lazy">
+            -->
+       <div id="avatar-container" class="w-64 h-64 md:w-80 md:h-80 rounded-full neon-border flex items-center justify-center overflow-hidden relative avatar-gradient-bg"><img id="profile-image" class="w-full h-full object-cover hidden" alt="Profile Photo" loading="lazy">
+        <div id="avatar-initials" class="text-center">
+         <div class="text-6xl md:text-8xl font-bold neon-text">
+          HK
+         </div>
+         <p class="code-font text-xs mt-2 text-neon">developer</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+     <div class="w-6 h-10 rounded-full neon-border flex justify-center pt-2">
+      <div class="w-1 h-3 rounded-full animate-bounce scroll-bounce"></div>
+     </div>
+    </div>
+   </section><!-- Skills Section -->
+   <section id="skills" class="py-20 relative">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-16">
+      <p class="code-font text-sm mb-2 text-neon"></p>
+      <h2 class="section-title text-primary-color">Technical <span class="neon-text">Arsenal</span></h2>
+      <div class="gradient-line w-24 mx-auto mt-4"></div>
+     </div>
+     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><!-- Web Technologies -->
+      <div class="card neon-border p-6">
+       <div class="icon-circle mb-4">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold mb-4 text-primary-color">Web Technologies</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-tag">HTML5</span> <span class="skill-tag">CSS3</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">React.js</span> <span class="skill-tag">Flexbox</span> <span class="skill-tag">Grid</span>
+       </div>
+      </div><!-- Backend & Data -->
+      <div class="card neon-border p-6">
+       <div class="icon-circle mb-4">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M4 6h16M4 12h16M4 18h16" /> <circle cx="8" cy="6" r="1" fill="currentColor" /> <circle cx="12" cy="12" r="1" fill="currentColor" /> <circle cx="16" cy="18" r="1" fill="currentColor" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold mb-4 text-primary-color">Back-End &amp; Data</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-tag">API Integration</span> <span class="skill-tag">JSON</span> <span class="skill-tag">Google Sheets API</span>
+       </div>
+      </div><!-- Programming -->
+      <div class="card neon-border p-6">
+       <div class="icon-circle mb-4">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold mb-4 text-primary-color">Programming</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-tag">C++</span> <span class="skill-tag">Data Structures</span> <span class="skill-tag">ES6+</span>
+       </div>
+      </div><!-- Tools -->
+      <div class="card neon-border p-6">
+       <div class="icon-circle mb-4">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+        </svg>
+       </div>
+       <h3 class="text-lg font-semibold mb-4 text-primary-color">Tools &amp; Design</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-tag">Git</span> <span class="skill-tag">GitHub</span> <span class="skill-tag">VS Code</span> <span class="skill-tag">Canva AI</span> <span class="skill-tag">Responsive Design</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Projects Section -->
+   <section id="projects" class="py-20 projects-gradient-bg">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-16">
+      <p class="code-font text-sm mb-2 text-neon"></p>
+      <h2 class="section-title text-primary-color">Featured <span class="neon-text">Work</span></h2>
+      <div class="gradient-line w-24 mx-auto mt-4"></div>
+     </div>
+     <div class="grid md:grid-cols-2 gap-8"><!-- Project 1 -->
+      <div class="project-card card neon-border p-8">
+       <div class="flex items-center gap-3 mb-4">
+        <div class="icon-circle">
+         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /> <polyline points="9 22 9 12 15 12 15 22" />
+         </svg>
+        </div><span class="skill-tag">Live Project</span>
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-primary-color">AI-Integrated Marketplace Platform</h3>
+       <p class="mb-4 text-secondary-color">Designed and developed a functional marketplace website with a focus on clean, intuitive UI. Integrated Google Sheets API as a dynamic database to fetch and display product data in real-time.</p>
+       <div class="flex flex-wrap gap-2 mb-6"><span class="text-xs px-3 py-1 rounded-full project-tag">HTML/CSS</span> <span class="text-xs px-3 py-1 rounded-full project-tag">JavaScript</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Google Sheets API</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Canva AI</span>
+       </div>
+       <div class="flex gap-4"><a href="#" class="flex items-center gap-2 text-sm font-medium transition-colors link-primary">
+         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+         </svg> View Demo </a> <a href="#" class="flex items-center gap-2 text-sm font-medium transition-colors link-secondary">
+         <svg width="16" height="16" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+         </svg> Source Code </a>
+       </div>
+      </div><!-- Project 2 -->
+      <div class="project-card card neon-border p-8">
+       <div class="flex items-center gap-3 mb-4">
+        <div class="icon-circle">
+         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" />
+         </svg>
+        </div><span class="skill-tag badge-in-progress">In Progress</span>
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-primary-color">React Portfolio Component</h3>
+       <p class="mb-4 text-secondary-color">Developing a modular portfolio using React.js components to optimize site performance and maintainability. Implementing React Hooks (useState, useEffect) to manage state and handle dynamic user interactions.</p>
+       <div class="flex flex-wrap gap-2 mb-6"><span class="text-xs px-3 py-1 rounded-full project-tag">React.js</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Hooks</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Component Architecture</span>
+       </div>
+       <div class="flex gap-4"><span class="flex items-center gap-2 text-sm font-medium link-secondary">
+         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+         </svg> Coming Soon </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Education Section -->
+   <section id="education" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-16">
+      <p class="code-font text-sm mb-2 text-neon"></p>
+      <h2 class="section-title text-primary-color">Academic <span class="neon-text">Journey</span></h2>
+      <div class="gradient-line w-24 mx-auto mt-4"></div>
+     </div>
+     <div class="max-w-2xl mx-auto">
+      <div class="card neon-border p-8 relative">
+       <div class="flex items-start gap-6">
+        <div class="flex flex-col items-center">
+         <div class="timeline-dot"></div>
+         <div class="timeline-line h-full min-h-24"></div>
+        </div>
+        <div><span class="skill-tag mb-4 inline-block">2024 – 2028</span>
+         <h3 class="text-xl font-bold mb-2 text-primary-color">Bachelor of Technology (B.Tech)</h3>
+         <p class="text-lg mb-2 text-neon">Computer Science and Engineering</p>
+         <p class="mb-4 text-secondary-color">N.K. Orchid College of Engineering and Technology, Solapur</p>
+         <div class="flex flex-wrap gap-2"><span class="text-xs px-3 py-1 rounded-full project-tag">Data Structures</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Web Development</span> <span class="text-xs px-3 py-1 rounded-full project-tag">Programming</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Languages Section -->
+   <section class="py-16 languages-section-bg">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="flex flex-wrap justify-center gap-8">
+      <div class="text-center">
+       <p class="text-sm mb-2 text-secondary-color">Languages</p>
+       <div class="flex gap-4"><span class="skill-tag">English</span> <span class="skill-tag">Hindi</span> <span class="skill-tag">Marathi</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+     <div class="text-center mb-16">
+      <p class="code-font text-sm mb-2 text-neon"></p>
+      <h2 class="section-title text-primary-color">Let's <span class="neon-text">Connect</span></h2>
+      <div class="gradient-line w-24 mx-auto mt-4"></div>
+     </div>
+     <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto"><!-- Phone --> <a href="tel:+919359494292" class="card neon-border p-6 text-center group">
+       <div class="icon-circle mx-auto mb-4 group-hover:neon-glow transition-all">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+       </div><h3 class="font-semibold mb-2 text-primary-color">Phone</h3><p id="contact-phone" class="text-secondary-color">+91 9359494292</p></a> <!-- Email --> <a href="mailto:Harshukamble2607@gmail.com" class="card neon-border p-6 text-center group">
+       <div class="icon-circle mx-auto mb-4 group-hover:neon-glow transition-all">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /> <polyline points="22,6 12,13 2,6" />
+        </svg>
+       </div><h3 class="font-semibold mb-2 text-primary-color">Email</h3><p id="contact-email" class="text-secondary-color">Harshukamble2607@gmail.com</p></a> <!-- Location -->
+      <div class="card neon-border p-6 text-center">
+       <div class="icon-circle mx-auto mb-4">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="neon-text"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /> <circle cx="12" cy="10" r="3" />
+        </svg>
+       </div>
+       <h3 class="font-semibold mb-2 text-primary-color">Location</h3>
+       <p id="contact-location" class="text-secondary-color">Bhawani Peth, Solapur</p>
+      </div>
+     </div><!-- CTA -->
+     <div class="text-center mt-12">
+      <p class="mb-6 text-secondary-color">Ready to collaborate? Let's build something amazing together!</p><a href="mailto:Harshukamble2607@gmail.com" class="btn-primary inline-flex items-center gap-2">
+       <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /> <polyline points="22,6 12,13 2,6" />
+       </svg> Get In Touch </a>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-8 border-t">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+     <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg neon-border flex items-center justify-center neon-text font-bold text-sm">
+       HK
+      </div><span class="code-font text-sm text-secondary-color">© 2024 Harshvardhan Kamble</span>
+     </div>
+     <p class="code-font text-sm text-secondary-color">Built with <span class="neon-text">❤</span> and lots of <span class="neon-text">☕</span></p>
+    </div>
+   </footer>
+  </div>
+  </body>
+  <script src="script.js"></script>
+  </html>

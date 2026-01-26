@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production / Build
+/build
+/dist
+/.next/
+/out/
+
+# Secrets (IMPORTANT: Never upload these)
+.env
+.env.local
+.env.development.local
+
+# Misc
+.DS_Store
+Thumbs.db
