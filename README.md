@@ -10,8 +10,8 @@ A personal website built to showcase my journey, projects, and technical skills 
 ## 🛠 Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (or React/Next.js)
-- **Styling:** Tailwind CSS / Bootstrap
-- **Deployment:** GitHub Pages / Vercel
+- **Styling:** Tailwind CSS 
+- **Deployment:** GitHub Pages 
 
 ---
 
@@ -19,7 +19,7 @@ A personal website built to showcase my journey, projects, and technical skills 
 
 - **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
 - **Project Showcase:** Interactive grid displaying my best work with links to code.
-- **Contact Form:** Integrated with [Formspree/EmailJS] for direct inquiries.
+- **Contact Form:** Integrated with EmailJS for direct inquiries.
 - **Dark Mode:** User-controlled theme switching.
 
 ---
