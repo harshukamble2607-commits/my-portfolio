@@ -3,7 +3,7 @@
 
 A personal website built to showcase my journey, projects, and technical skills as a Web Developer.
 
-**Live Demo:** [Insert Your GitHub Pages or Vercel Link Here]
+**Live Demo:**https://harshukamble2607-commits.github.io/my-portfolio/
 
 ---
 
