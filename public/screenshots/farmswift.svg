@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="FarmSwift placeholder artwork">
+  <defs>
+    <pattern id="fs-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#202124" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
+    <linearGradient id="fs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2F4F6" />
+      <stop offset="1" stop-color="#FAFAF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#fs-bg)" />
+  <rect width="960" height="600" fill="url(#fs-grid)" />
+
+  <!-- Market rows -->
+  <g opacity="0.55">
+    <path d="M120 470C260 430 700 430 840 470" fill="none" stroke="#315E81" stroke-opacity="0.25" stroke-width="2" />
+    <path d="M120 500C260 462 700 462 840 500" fill="none" stroke="#315E81" stroke-opacity="0.18" stroke-width="2" />
+    <path d="M120 530C260 494 700 494 840 530" fill="none" stroke="#315E81" stroke-opacity="0.12" stroke-width="2" />
+  </g>
+
+  <!-- Leaf illustration -->
+  <g transform="translate(480 300)">
+    <path d="M-70 40C-70 -40 -10 -110 70 -120C78 -30 40 60 -70 40Z" fill="#315E81" fill-opacity="0.10" stroke="#315E81" stroke-width="2.5" />
+    <path d="M-70 40C-30 -10 10 -60 70 -120" fill="none" stroke="#315E81" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M-30 6L-6 -18M-6 -18L-24 -20M-6 -18L-4 -36M14 -40L38 -64M38 -64L20 -66M38 -64L40 -82" fill="none" stroke="#315E81" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Heading -->
+  <text x="80" y="112" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" letter-spacing="-0.5">FarmSwift</text>
+  <text x="80" y="146" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#626873">Farm-fresh marketplace prototype</text>
+
+  <!-- Placeholder tag -->
+  <g transform="translate(80 512)">
+    <rect width="230" height="38" rx="19" fill="#FFFFFF" stroke="#E7E8EB" />
+    <text x="115" y="24" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#626873">PLACEHOLDER ARTWORK</text>
+  </g>
+</svg>

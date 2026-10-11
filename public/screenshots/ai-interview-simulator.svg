@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="AI Interview Simulator placeholder artwork">
+  <defs>
+    <pattern id="ais-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#202124" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
+    <linearGradient id="ais-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2F4F6" />
+      <stop offset="1" stop-color="#FAFAF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#ais-bg)" />
+  <rect width="960" height="600" fill="url(#ais-grid)" />
+
+  <!-- Chat bubbles -->
+  <g transform="translate(500 300)">
+    <rect x="-190" y="-150" width="300" height="120" rx="24" fill="#FFFFFF" stroke="#E7E8EB" stroke-width="2" />
+    <rect x="-150" y="-122" width="180" height="12" rx="6" fill="#202124" fill-opacity="0.16" />
+    <rect x="-150" y="-96" width="220" height="12" rx="6" fill="#202124" fill-opacity="0.10" />
+    <rect x="-150" y="-70" width="140" height="12" rx="6" fill="#202124" fill-opacity="0.10" />
+
+    <rect x="-60" y="-10" width="250" height="120" rx="24" fill="#315E81" fill-opacity="0.08" stroke="#315E81" stroke-opacity="0.35" stroke-width="2" />
+    <rect x="-24" y="18" width="180" height="12" rx="6" fill="#315E81" fill-opacity="0.35" />
+    <rect x="-24" y="44" width="130" height="12" rx="6" fill="#315E81" fill-opacity="0.22" />
+  </g>
+
+  <!-- Microphone -->
+  <g transform="translate(320 170)">
+    <rect x="-16" y="-46" width="32" height="64" rx="16" fill="#315E81" />
+    <path d="M-32 4a32 32 0 0 0 64 0" fill="none" stroke="#315E81" stroke-width="3" stroke-linecap="round" />
+    <path d="M0 36V54M-14 54H14" fill="none" stroke="#315E81" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Play control -->
+  <g transform="translate(210 470)">
+    <circle cx="0" cy="0" r="26" fill="#315E81" />
+    <path d="M-7 -12L14 0L-7 12Z" fill="#FFFFFF" />
+    <rect x="42" y="-9" width="120" height="9" rx="4.5" fill="#202124" fill-opacity="0.12" />
+    <rect x="42" y="8" width="80" height="9" rx="4.5" fill="#202124" fill-opacity="0.08" />
+  </g>
+
+  <!-- Heading -->
+  <text x="80" y="112" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" letter-spacing="-0.5">AI Interview Simulator</text>
+  <text x="80" y="146" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#626873">Practice sessions with AI feedback</text>
+
+  <!-- Placeholder tag -->
+  <g transform="translate(80 512)">
+    <rect width="230" height="38" rx="19" fill="#FFFFFF" stroke="#E7E8EB" />
+    <text x="115" y="24" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#626873">PLACEHOLDER ARTWORK</text>
+  </g>
+</svg>

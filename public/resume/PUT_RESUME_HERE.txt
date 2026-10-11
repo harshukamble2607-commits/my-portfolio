@@ -1,0 +1,18 @@
+ADD YOUR RESUME HERE
+====================
+
+1. Put your resume PDF in this folder, for example:
+
+     public/resume/Harshvardhan-Kamble-Resume.pdf
+
+2. Open  src/data/profile.js  and set:
+
+     resumeUrl: 'resume/Harshvardhan-Kamble-Resume.pdf'
+
+   (The path is relative to the public folder, so do NOT include "public/".)
+
+3. That's it. The "Resume" button in the navigation becomes a real download
+   link automatically. Until a path is set, the button shows a clear
+   "coming soon" notice instead of linking to a missing file.
+
+Delete this placeholder text file once your PDF is in place.

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="Stock Anomaly Detector placeholder artwork">
+  <defs>
+    <pattern id="sad-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#202124" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
+    <linearGradient id="sad-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2F4F6" />
+      <stop offset="1" stop-color="#FAFAF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#sad-bg)" />
+  <rect width="960" height="600" fill="url(#sad-grid)" />
+
+  <!-- Axes -->
+  <g stroke="#202124" stroke-opacity="0.12" stroke-width="1.5">
+    <path d="M160 470H840" />
+    <path d="M160 150V470" />
+    <path d="M160 390H840M160 310H840M160 230H840" stroke-opacity="0.06" />
+  </g>
+
+  <!-- Trend line with anomaly spike -->
+  <path d="M180 400L260 372L340 388L420 340L500 352L560 250L600 300L680 268L760 236L820 250"
+        fill="none" stroke="#315E81" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M180 400L260 372L340 388L420 340L500 352L560 250L600 300L680 268L760 236L820 250V470H180Z"
+        fill="#315E81" fill-opacity="0.06" />
+
+  <!-- Anomaly marker -->
+  <circle cx="560" cy="250" r="16" fill="#315E81" fill-opacity="0.14" />
+  <circle cx="560" cy="250" r="7" fill="#315E81" />
+  <circle cx="560" cy="250" r="26" fill="none" stroke="#315E81" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="4 6" />
+
+  <!-- Heading -->
+  <text x="80" y="112" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" letter-spacing="-0.5">Stock Anomaly Detector</text>
+  <text x="80" y="146" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#626873">Exploring unusual patterns in market data</text>
+
+  <!-- Placeholder tag -->
+  <g transform="translate(80 512)">
+    <rect width="230" height="38" rx="19" fill="#FFFFFF" stroke="#E7E8EB" />
+    <text x="115" y="24" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#626873">PLACEHOLDER ARTWORK</text>
+  </g>
+</svg>
